@@ -6,8 +6,7 @@ def fetch_weather(city):
         'nTqM': '',
         "lang": "ru"
     }
-    url_template = 'https://wttr.in/{}'
-    url = url_template.format(city)
+    url = f'https://wttr.in/{city}'
     response = requests.get(url, params=payload)
     response.raise_for_status()
     return response.text
