@@ -1,6 +1,7 @@
 from urllib.parse import urljoin
 import requests
 
+
 def fetch_weather(city):
     payload = {
         'nTqM': '',
