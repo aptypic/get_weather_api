@@ -13,7 +13,7 @@ def fetch_weather(city):
 
 
 def main():
-    cities = ["cherepovec", "london", "sheremetevo"]
+    cities = ["cherepovec", "london", "SVO"]
     for city in cities:
         weather = fetch_weather(city)
         print(weather)
